@@ -6,7 +6,7 @@ https://www.youtube.com/live/xg1GeHKiNzU?si=oiWHK8bDTZ1c98hF&t=885
 
 // Loops o bucles
 
-// for
+// for clasico cuando sabes de antemano cuantas veces necesitas iterar
 
 for (let i = 0; i < 5; i++) {
     console.log(`Hola ${i}`)
@@ -18,7 +18,7 @@ for (let i = 0; i < numbers.length; i++) {
     console.log(`Elemento: ${numbers[i]}`)
 }
 
-// while
+// while no se sabe cuantas veces se iterará
 
 let i = 0
 while (i < 5) {
@@ -30,7 +30,7 @@ while (i < 5) {
 // while(true) {
 // }
 
-// do while
+// do while se itera al menos una vez
 
 i = 6
 do {
@@ -40,17 +40,17 @@ do {
 
 // for of
 
-myArray = [1, 2, 3, 4]
+let myArray = [1, 2, 3, 4]
 
-mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
+let mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
-myMap = new Map([
+let myMap = new Map([
     ["name", "Brais"],
     ["email", "braismoure@mouredev.com"],
     ["age", 37]
 ])
 
-myString = "¡Hola, JavaScript!"
+let myString = "¡Hola, JavaScript!"
 
 for (let value of myArray) {
     console.log(value)
