@@ -41,7 +41,7 @@ console.log(greeting.replace("Brais", "MoureDev")) // Reemplazo
 let message = `Hola, este
 es mi
 curso de
-JavaScript`
+JavaScript` // Solo es posible con las `` invertidas
 console.log(message)
 
 // Interpolación de valores

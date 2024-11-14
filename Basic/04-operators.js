@@ -74,7 +74,7 @@ Truthy values (valores verdaderos)
 Falsy values (valores falsos)
 
 - 0
--  0n
+- 0n (0 como BigInt)
 - null
 - undefined
 - NaN (Not a Number)

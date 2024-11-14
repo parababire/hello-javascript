@@ -16,14 +16,14 @@ console.log(myArray2)
 
 // Inicialización
 
-myArray = [3]
-myArray2 = new Array(3)
+myArray = [3] // [3] array con el valor numérico 3
+myArray2 = new Array(3) // [ <3 empty items> ] array con 3 espacios sin datos
 
 console.log(myArray)
 console.log(myArray2)
 
 myArray = [1, 2, 3, 4]
-myArray2 = new Array(1, 2, 3, 4)
+myArray2 = new Array(1, 2, 3, 4) // en este caso se crea el array [ 1, 2, 3, 4 ]
 
 console.log(myArray)
 console.log(myArray2)
@@ -34,11 +34,11 @@ myArray2 = new Array("Brais", "Moure", "mouredev", 37, true)
 console.log(myArray)
 console.log(myArray2)
 
-myArray2 = new Array(3)
+myArray2 = new Array(3) // creamos el array con tres espacios sin datos y luego son agregados
 myArray2[2] = "Brais"
 // myArray2[0] = "Moure"
 myArray2[1] = "mouredev"
-myArray2[4] = "mouredev"
+myArray2[4] = "mouredev" /* es posible agregar más datos aunque no haya sido reservado un espacio durante la inicialización */
 
 console.log(myArray2)
 
