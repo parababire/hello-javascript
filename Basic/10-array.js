@@ -44,7 +44,7 @@ console.log(myArray2)
 
 myArray = []
 myArray[2] = "Brais"
-// myArray[0] = "Moure"
+// myArray[0] = "Moure", al igual que con new Array() se puede obviar espacios
 myArray[1] = "mouredev"
 
 console.log(myArray)
@@ -82,24 +82,24 @@ console.log(myArray.length)
 // clear
 
 myArray = []
-myArray.length = 0 // alternativa
+// myArray.length = 0 // alternativa para limpiar un array (no recomendado)
 console.log(myArray)
 
 // slice
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-let myNewArray = myArray.slice(1, 3)
+let myNewArray = myArray.slice(1, 3) /* la función slice(1, 2) devuelve la porción comenzando en 1 sin tener en cuenta el elemento de la posición 3, [ 'Moure', 'mouredev' ]. El array original no es alterado */
 
 console.log(myArray)
 console.log(myNewArray)
 
 // splice
 
-myArray.splice(1, 3)
+myArray.splice(1, 3) /* La función splice(1, 3) elimina la porción desde el indice de inicio incluido el indice final y retorna los elemento ignorados, [ 'Brais', true ]. El array original es modificado */
 console.log(myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-myArray.splice(1, 2, "Nueva entrada")
+myArray.splice(1, 2, "Nueva entrada") // se puede sustituir una porción con un nuevo dato.
 console.log(myArray)
