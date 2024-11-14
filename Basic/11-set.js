@@ -26,7 +26,7 @@ mySet.add("https://moure.dev")
 
 console.log(mySet)
 
-mySet.delete("https://moure.dev")
+mySet.delete("https://moure.dev") // Se expecifica el elemento a eliminar, no sirven los indices.
 
 console.log(mySet)
 
