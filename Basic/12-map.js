@@ -26,8 +26,8 @@ console.log(myMap)
 
 // set
 
-myMap.set("alias", "mouredev")
-myMap.set("name", "Brais Moure")
+myMap.set("alias", "mouredev") // Si la key no existe la crea y asocia un valor
+myMap.set("name", "Brais Moure") // las claves no se repiten, pero su valor asociado se puede actualizar.
 
 console.log(myMap)
 
