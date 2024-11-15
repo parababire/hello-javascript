@@ -70,7 +70,7 @@ let person3 = {
         name: "Programador",
         exp: 15,
         work: function () {
-            console.log(`La persona de ${this.age} años de experiencia trabaja.`)
+            console.log(`La persona de ${this.exp} años de experiencia trabaja.`)
         }
     }
 }
@@ -95,9 +95,9 @@ console.log(person)
 console.log(person4)
 
 console.log(person == person4)
-console.log(person === person4)
+console.log(person === person4) // false, ya que los objetos se guardan en espacios de memoria distintos
 
-console.log(person.name == person4.name)
+console.log(person.name === person4.name) // cuando buscamos igualdad estricta entre objetos, debemos comparar las propiedades de estos ya que se busca igualdad de valores y tipo
 
 // Iteración
 
