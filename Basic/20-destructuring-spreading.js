@@ -20,14 +20,14 @@ console.log(myName)
 
 // Desestructuración
 
-// Sintaxis arrays
+// Sintaxis arrays, la desestructuración se da por el orden del array
 
 let [myValue0, myValue1, myValue2, myValue3, myValue4] = myArray
 console.log(myValue0)
 console.log(myValue1)
 console.log(myValue2)
 console.log(myValue3)
-console.log(myValue4)
+console.log(myValue4) // imprime undefined al no existir un dato que asignar
 
 // Sintaxis arrays con valores predeterminados
 
@@ -36,7 +36,7 @@ console.log(myValue5)
 console.log(myValue6)
 console.log(myValue7)
 console.log(myValue8)
-console.log(myValue9)
+console.log(myValue9) // para no permitir la impresión de undefined le asignamos un valor por defecto
 
 // Ignorar elementos array
 
@@ -51,15 +51,15 @@ console.log(name)
 console.log(age)
 console.log(alias)
 
-// Sintaxis objects con valores predeterminados
+/* Sintaxis objects con valores predeterminados, en este caso las variables creadas deben tener el mismo nombre de las propiedades del objeto */
 
 let { name2, age2, alias2, email = "email@email.com" } = person
-console.log(name2) // No existe
-console.log(age2)  // No existe
-console.log(alias2)  // No existe
-console.log(email)
+console.log(name2) // name2 No existe en person
+console.log(age2)  // age2 No existe en person
+console.log(alias2)  // alias2 No existe en person
+console.log(email) // email no existe, esto cambia al darle un valor predeterminado
 
-// Sintaxis objects con nuevos nombres de variables
+// Sintaxis objects con nuevos nombres de variables, acá si podemos desestructurar un objeto y asignar sus valores a nuevas variables
 
 let { alias: alias3, name: name3, age: age3 } = person
 console.log(name3)
@@ -91,7 +91,7 @@ console.log(jobName)
 
 // Propagación (...)
 
-// Sintaxis arrays
+/* Sintaxis arrays, usamos ... generalmente para propagar los valores de un array al crear otra nueva mientras incluimos más datos */
 
 let myArray2 = [...myArray, 5, 6]
 
@@ -109,7 +109,7 @@ let myArray4 = [...myArray, ...myArray2, ...myArray3]
 
 console.log(myArray4)
 
-// Sintaxis objects
+/* Sintaxis objects, usamos ... generalmente para propagar las propiedades de un objeto al crear otro con nuevas propiedades */
 
 let person4 = { ...person, email: "braismoure@mouredev.com" }
 
