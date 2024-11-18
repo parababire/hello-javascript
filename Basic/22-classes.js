@@ -93,7 +93,7 @@ let person5 = new PrivatePerson("Brais", 37, "MoureDev", "IBAN123456789")
 
 // No podemos acceder
 // console.log(person5.bank) 
-// person5.bank = "new IBAN123456789" // bank no es #bank
+// person5.bank = "new IBAN123456789" // bank no es #bank, bank es una propiedad nueva.
 
 console.log(person5)
 
@@ -123,7 +123,7 @@ class GetSetPerson {
 
 }
 
-person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
+let person6 = new GetSetPerson("Brais", 37, "MoureDev", "IBAN123456789")
 
 console.log(person6)
 console.log(person6.name)
@@ -183,7 +183,7 @@ let myFish = new Fish("MoureFish", 10)
 myFish.swim()
 myFish.sound()
 
-// Métodos estáticos
+// Métodos estáticos, no es necesario instanciar la clase para acceder a ellos.
 
 class MathOperations {
 
