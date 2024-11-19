@@ -4,11 +4,11 @@ Clases (continuación) y manejo de errores
 https://www.youtube.com/live/8p6SLAIgwZI?si=MS9o7qIhezx9NTQX&t=902
 */
 
-// Excepción
+// Excepción: evento anomalo capaz de interferir con la ejecución del código
 
 // Produce una excepción
 let myObject
-// console.log(myObject.email)
+// console.log(myObject.email) error
 
 // Captura de errores
 
@@ -19,8 +19,8 @@ try {
     console.log(myObject.email)
     console.log("Finaliza la ejecución sin errores")
 } catch {
-    // Bloque de error
-    console.log("Se ha producido un error")
+    // Bloque de error: se notifica la ocurrencia de un error
+    console.log("Se ha detectado un error en el bloque try")
 }
 
 // Captura del error
@@ -28,7 +28,7 @@ try {
 try {
     console.log(myObject.email)
 } catch (error) {
-    console.log("Se ha producido un error:", error.message)
+    console.log("Se ha producido un error:", error.message) /* manejo del error que produce la excepción y devuelve un mensaje al usuario */
 }
 
 // finally
@@ -52,7 +52,7 @@ try {
 
 // throw
 
-// throw new Error("Se ha producido un error");
+// throw new Error("Se ha producido un error") (sintaxis para lanzamiento de error)
 
 function sumIntegers(a, b) {
     if (typeof a !== "number" || typeof b !== "number") {
