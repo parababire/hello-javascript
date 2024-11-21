@@ -13,7 +13,7 @@ console.log("¡Hola, JavaScript!")
 // error
 
 console.error("Este es un mensaje de error.")
-console.error("Error al conectarse a la base de datos: ", new Error("Conexión fallida."))
+console.error("Error al conectarse a la base de datos: ", new Error("Conexión fallida.")) /* Además del error que ocurre ("Error al conectarse a la base de datos: "), se puede lanzar un un tipo de error (new Error("Conexión fallida.")) que permite trazar dicho error */
 
 // warn
 
@@ -71,7 +71,7 @@ console.timeEnd("Tiempo de ejecución 1")
 // assert
 
 let age = 17
-console.assert(age >= 18, "El usuario debe ser mayor de edad.")
+console.assert(age >= 18, "El usuario debe ser mayor de edad.") /* Mientras el resultado de la condición sea false, se imprime un mensaje */
 
 // count
 
