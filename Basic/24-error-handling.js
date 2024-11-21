@@ -94,7 +94,7 @@ try {
 
 class SumZeroIntegerError extends Error {
     constructor(message, a, b) {
-        super(message)
+        super(message) /* message: se refiere al mensage, que toma como argumento el objeto Error cuando es lanzado (throw) */
         this.a = a
         this.b = b
     }
