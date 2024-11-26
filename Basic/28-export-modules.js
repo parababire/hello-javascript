@@ -39,6 +39,8 @@ export class Circle {
 
 // Exportación por defecto
 
+/* No todo se puede exportar por defecto. Solo podemos exportar por defectos funciones y cleses */
+
 export default function substract(a, b) {
     return a - b
 }

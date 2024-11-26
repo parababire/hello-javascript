@@ -35,4 +35,6 @@ console.log(defaultImport(5, 10))
 
 // Proyecto modular
 
+/* Cuando estamos trabajando y debemos importar un archivo en una dirección distinta de la dirección actual */
+
 // import { MyImport } from "./directory/file.js"
